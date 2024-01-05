@@ -39,6 +39,7 @@
     <div>
       <p>Kesimpulan</p>
       <p>Saran</p>
+      <p>Berikan Kritik & Saran untuk kami </p>
     </div>
   </section>
   <footer class="navigator">

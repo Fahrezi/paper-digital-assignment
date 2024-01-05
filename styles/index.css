@@ -50,6 +50,10 @@ body {
   text-align: center;
 }
 
+.navigator .center > a > img {
+  width: 2rem;
+}
+
 .navigator .right {
   grid-area: right;
   text-align: right;

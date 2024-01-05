@@ -12,8 +12,8 @@
 </head>
 <body>
   <header>
-    <h1>Makalah</h1>
-    <p>by Website</p>
+    <h1>Website Makalah</h1>
+    <p>Kelompok 1</p>
   </header>
   <section>
     <h2>Kata Pengantar</h2>
