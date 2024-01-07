@@ -6,6 +6,10 @@
   transition: all 0.5s;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #D9D9D9;
   color: #272525;
@@ -57,4 +61,32 @@ body {
 .navigator .right {
   grid-area: right;
   text-align: right;
+}
+
+:root {
+  font-size: calc(100vw * 16 / 1600);
+}
+
+@media screen and (max-width: 48em) {
+  :root {
+    font-size: calc(100vw * 16 / 360);
+  }
+
+  .navigator {
+    padding: 1.5rem 2rem;
+    grid-template-columns: 7rem 1fr 7rem;
+    width: 100%;
+  }
+
+  .navigator > * {
+    opacity: 1;
+  }
+
+  .navigator > div > a > img {
+    width: 3rem;
+  }
+  
+  .navigator > div > p {
+    font-size: 0.75rem;
+  }
 }
