@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ body {
   grid-template-columns: 10rem 1fr 10rem;
   padding: 1.5rem 10rem;
   position: fixed;
-  width: calc(100% - 20rem);
+  width: 100%;
 }
 
 .navigator > * {
@@ -80,6 +82,10 @@ body {
 
   .navigator > * {
     opacity: 1;
+  }
+
+  .navigator .center > a > img {
+    width: 1.5rem;
   }
 
   .navigator > div > a > img {

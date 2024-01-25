@@ -7,7 +7,7 @@ header > h1 {
   font-size: 3rem;
 }
 
-header > h3 {
+header > h2 {
   font-size: 1.3rem;
 }
 
@@ -21,7 +21,7 @@ div.body {
   padding: 0 10rem;
 }
 
-h4 {
+h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -40,18 +40,60 @@ div.body > section:nth-of-type(2) {
   grid-template-columns: 1fr 30%;
 }
 
-div.body > section:nth-of-type(2) > form > div > h5 {
+div.body > section:nth-of-type(2) > div > div > h4 {
   font-size: 1rem;
 }
 
-div.body > section:nth-of-type(2) > form > div > textarea {
+div.body > section:nth-of-type(2) > div > div > textarea {
   height: 5rem;
   padding: 1rem;
   width: 100%;
 }
 
-div.body > section:nth-of-type(2) > form > button {
+div.body > section:nth-of-type(2) > div > button {
   cursor: pointer;
   font-size: 0.85rem;
   padding: 0.25rem 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin-bottom: 2rem;
+  }
+
+  header > h1 {
+    font-size: 2rem;
+  }
+
+  div.body {
+    padding: 0 2rem;
+  }
+
+  div.body p {
+    font-size: 0.75rem;
+  }
+
+  div.body > section:nth-of-type(2) {
+    display: block;
+  }
+
+  div.body > section:nth-of-type(2) > div {
+    margin-bottom: 1rem;
+  }
+
+  div.body > section:nth-of-type(2) > div > div > h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  div.body > section:nth-of-type(2) > div > div > textarea {
+    height: 6rem;
+    margin-bottom: 0.15rem;
+  }
+
+  div.body > section:nth-of-type(2) > div > button {
+    display: block;
+    padding: 0.25rem 0;
+    width: 100%;
+  }
+  
 }

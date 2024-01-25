@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="PWA Paper Digital Assignment Application" />
   <title>DAFTAR ISI</title>
+  <link rel="icon" href="./images/logo.png" type="image/png">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/daftarIsi.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="./images/logo.png" />
+  <link rel="manifest" href="./manifest.json" />
 </head>
 <body>
   <h2>DAFTAR ISI</h2>
-  <section>
-    <a class="redirect" href="bab1.php">
+  <section class="redirect">
+    <a href="bab1.html">
       <h1>Bab 1 (Pendahuluan)</h1>
     </a>
     <div>
@@ -21,8 +23,8 @@
       <p>Tujuan</p>
     </div>
   </section>
-  <section>
-    <a class="redirect" href="bab2.php">
+  <section class="redirect">
+    <a href="bab2.html">
       <h1>Bab 2 (Pembahasan)</h1>
     </a>
     <div>
@@ -32,8 +34,8 @@
       <p>Hasil</p>
     </div>
   </section>
-  <section>
-    <a class="redirect" href="bab3.php">
+  <section class="redirect">
+    <a href="bab3.html">
       <h1>Bab 3 (Penutup)</h1>
     </a>
     <div>
@@ -44,17 +46,27 @@
   </section>
   <footer class="navigator">
     <div class="left">
-      <a href="home.php">
+      <a href="index.html">
         <img src="images/arrow-left.png" alt="Utama"> 
       </a>
       <p>Utama</p>
     </div>
     <div class="right">
-      <a href="bab1.php">
+      <a href="bab1.html">
         <img src="images/arrow-right.png" alt="Bab 1"> 
       </a>
       <p>Bab 1</p>
     </div>
   </footer>
 </body>
+<script>
+  const redirectList = document.getElementsByClassName('redirect');
+  const redirect0 = redirectList.item(0);
+  const redirect1 = redirectList.item(1);
+  const redirect2 = redirectList.item(2);
+
+  redirect0.addEventListener('click', () => redirect0.classList.toggle('active'));
+  redirect1.addEventListener('click', () => redirect1.classList.toggle('active'));
+  redirect2.addEventListener('click', () => redirect2.classList.toggle('active'));
+</script>
 </html>

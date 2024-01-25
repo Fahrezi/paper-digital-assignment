@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="PWA Paper Digital Assignment Application" />
   <title>Paper Digital Assignment</title>
+  <link rel="icon" href="./images/logo.png" type="image/png">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/home.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="./images/logo.png" />
+  <link rel="manifest" href="./manifest.json" />
 </head>
 <body>
   <header>
@@ -28,11 +30,20 @@
   </section>
   <footer class="navigator">
     <div class="right">
-      <a href="daftarIsi.php">
+      <a href="daftarIsi.html">
         <img src="images/arrow-right.png" alt="Daftar Isi"> 
       </a>
       <p>Daftar Isi</p>
     </div>
   </footer>
 </body>
+<script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./serviceWorker.js')
+        .then((reg) => console.log('Success: ', reg.scope))
+        .catch((err) => console.err(err));
+    })
+  }
+</script>
 </html>

@@ -1,0 +1,15 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "1024x1024",
+      "src": "/images/logo.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Paper Digital Assignment Application",
+  "short_name": "Paper Digital",
+  "start_url": ".",
+  "theme_color": "#000000"
+}
