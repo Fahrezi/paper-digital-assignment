@@ -60,6 +60,16 @@
   </footer>
 </body>
 <script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      if(!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register('./serviceWorker.js')
+          .then((reg) => console.log('Success: ', reg.scope))
+          .catch((err) => console.err(err));
+      }
+    })
+  }
+
   const redirectList = document.getElementsByClassName('redirect');
   const redirect0 = redirectList.item(0);
   const redirect1 = redirectList.item(1);

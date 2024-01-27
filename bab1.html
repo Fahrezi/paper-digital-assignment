@@ -57,4 +57,15 @@
     </div>
   </footer>
 </body>
+<script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      if(!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register('./serviceWorker.js')
+          .then((reg) => console.log('Success: ', reg.scope))
+          .catch((err) => console.err(err));
+      }
+    })
+  }
+</script>
 </html>
